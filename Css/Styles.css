@@ -1,0 +1,89 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+}
+
+.CakeStructure{
+    display: block;
+}
+.flame {
+    background: linear-gradient(
+        to bottom, 
+        rgba(255, 255, 255, 0.8), /* White tip */
+        rgb(255, 165, 0), /* Orange */
+        rgb(255, 69, 0) /* Darker Orange */
+    );
+    width: 20px;
+    height: 40px;
+    border-radius: 50% 50% 50% 50%; /* Rounded corners for a flame shape */
+    position: relative;
+    animation: flicker 1s infinite alternate; /* Flickering animation */
+    box-shadow: 0px 0px 10px 2px rgba(255, 165, 0, 0.6); /* Glow around the flame */
+    transform: scaleY(1.5); /* Stretch the flame vertically */
+    margin: 0 auto; /* Center horizontally */
+}
+
+@keyframes flicker {
+    0% {
+        transform: scaleY(1) translateX(0) translateY(0);
+        opacity: 0.9;
+    }
+    50% {
+        transform: scaleY(1.2) translateX(-2px) translateY(-2px);
+        opacity: 1;
+    }
+    100% {
+        transform: scaleY(1) translateX(2px) translateY(2px);
+        opacity: 0.8;
+    }
+}
+.candle{
+    background-color: rgb(234, 211, 165);
+    width: 15px;
+    height: 60px;
+    border-radius: 10px;
+}
+.cake1{
+    background-color: rgb(24, 4, 112);
+    width: 100px;
+    height: 70px;
+    border-radius: 20px;
+    
+}
+.cake2{
+    background-color: rgb(3, 31, 81);
+    
+    width: 180px;
+    height: 70px;
+    border-radius: 20px;
+    
+    
+}
+.cake3{
+    background-color: rgb(10, 6, 68);
+    width: 300px;
+    height: 100px;
+    border-radius: 20px;
+    
+}
+
+.message{
+    display: block;
+    background-color: rgb(38, 41, 67);
+    padding: 2px 3px;
+}
+
+.MessageText{
+    display: block;
+    justify-content: center;
+    background-color: rgb(123, 128, 178);
+    align-items: center;
+    padding: 2px;
+
+}
